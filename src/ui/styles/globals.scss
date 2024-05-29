@@ -1,0 +1,41 @@
+@use "./variables";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-size: 18px;
+    font-family: var(--font);
+    color: variables.$text-primary-color;
+}
+
+html {
+    scrollbar-gutter: stable;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+.container {
+    padding: 24px;
+}
